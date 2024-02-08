@@ -12,6 +12,22 @@ The `xlsx-converter` is a versatile Node.js library that simplifies the conversi
 - Built-in handling of Excel's cell range to ensure precise data selection.
 - You can specify the sheet number as the fourth parameter when calling the function. If no sheet number is provided, it defaults to sheet 0
 
+## Installation
+
+1. **Clone this repository to your local machine:**
+
+   ```bash
+   git clone https://github.com/your-username/xlsx-converter.git
+
+2. **Install necessary dependencies using:**
+
+   ```javascript
+      npm install
+   
+      // OR
+   
+      yarn
+
 ## Usage
 
 ```javascript
