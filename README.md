@@ -17,10 +17,10 @@ The `xlsx-converter` is a versatile Node.js library that simplifies the conversi
 const convertXlsxToFormat = require('xlsx-converter');
 
 // Convert XLSX to JSON
-convertXlsxToFormat("input.xlsx", "output.json", "json");
+convertXlsxToFormat("path/to/your/input.xlsx", "output.json", "json");
 
 // Convert XLSX to CSV
-convertXlsxToFormat("input.xlsx", "output.csv", "csv");
+convertXlsxToFormat("path/to/your/input.xlsx", "output.csv", "csv");
 
 // Convert XLSX to XML
-convertXlsxToFormat("input.xlsx", "output.xml", "xml");
+convertXlsxToFormat("path/to/your/input.xlsx", "output.xml", "xml");
