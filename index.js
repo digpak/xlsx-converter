@@ -3,12 +3,12 @@ const jsonfile = require("jsonfile");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 const { Builder } = require("xml2js");
 
-function convertXlsxToFormat(inputFilePath, outputFilePath, format) {
+function convertXlsxToFormat(inputFilePath, outputFilePath, format, sheetNumber = 0) {
   // Load your XLSX file
   const workbook = XLSX.readFile(inputFilePath);
 
-  // Assume you want to convert the first sheet in the XLSX file
-  const sheetName = workbook.SheetNames[0];
+  // Get sheet name based on the provided sheet number or default to the first sheet
+  const sheetName = workbook.SheetNames[sheetNumber] || workbook.SheetNames[0];
   const worksheet = workbook.Sheets[sheetName];
 
   // Get the range of cells from A1 to H (first 8 columns)
