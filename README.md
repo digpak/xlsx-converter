@@ -10,6 +10,7 @@ The `xlsx-converter` is a versatile Node.js library that simplifies the conversi
 - Supports a range of output formats to suit diverse requirements.
 - Ideal for data extraction, migration, and integration tasks.
 - Built-in handling of Excel's cell range to ensure precise data selection.
+- You can specify the sheet number as the fourth parameter when calling the function. If no sheet number is provided, it defaults to sheet 0
 
 ## Usage
 
@@ -24,3 +25,10 @@ convertXlsxToFormat("path/to/your/input.xlsx", "output.csv", "csv");
 
 // Convert XLSX to XML
 convertXlsxToFormat("path/to/your/input.xlsx", "output.xml", "xml");
+
+// Convert XLSX to JSON from sheet 1 (indexing starts from 0)
+convertXlsxToFormat("input.xlsx", "output.json", "json", 1);
+
+// Convert XLSX to CSV using the default sheet (sheet 0)
+convertXlsxToFormat("input.xlsx", "output.csv", "csv");
+
