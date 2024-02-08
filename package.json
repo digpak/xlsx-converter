@@ -1,0 +1,24 @@
+{
+  "name": "xlsx-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xlsx",
+    "converter",
+    "json",
+    "csv",
+    "xml"
+  ],
+  "author": "Basit Arshad",
+  "license": "ISC",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "jsonfile": "^6.1.0",
+    "xlsx": "^0.18.5",
+    "xml2js": "^0.6.2"
+  }
+}
